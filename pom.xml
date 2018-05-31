@@ -117,11 +117,11 @@
             <version>1.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.weblaf</groupId>
-            <artifactId>weblaf-lnf</artifactId>
-            <version>1.2.8</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.weblaf</groupId>-->
+            <!--<artifactId>weblaf-lnf</artifactId>-->
+            <!--<version>1.2.8</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.weblaf-complete</groupId>
@@ -129,11 +129,11 @@
             <version>1.28</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.taobao</groupId>
-            <artifactId>top-auto-sdk</artifactId>
-            <version>1.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao</groupId>-->
+            <!--<artifactId>top-auto-sdk</artifactId>-->
+            <!--<version>1.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.aliyun</groupId>
@@ -252,6 +252,11 @@
             <artifactId>pdfbox</artifactId>
             <version>2.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.olap4j</groupId>
+            <artifactId>olap4j</artifactId>
+            <version>1.2.0</version>
+        </dependency>
 
 
 
@@ -279,7 +284,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.fangxuele.tool.wechat.push.ui.MainWindow</mainClass>
+                            <mainClass>com.emi.ui.MainWindow</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -301,6 +306,35 @@
                     </execution>
                 </executions>
             </plugin>
+
+
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.emi.ui.MainWindow</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <Class-Path>.</Class-Path>
+                        </manifestEntries>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -389,6 +423,7 @@
                     </execution>
                 </executions>
             </plugin>
+
 
         </plugins>
     </build>

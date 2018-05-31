@@ -102,7 +102,7 @@ public class MainWindow {
 //        PushListener.addListeners();
 //        ScheduleListener.addListeners();
         TabListener.addListeners();
-//        FramListener.addListeners();
+        FramListener.addListeners();
         LogUitl.addElement("应用程序启动成功...");
 
     }

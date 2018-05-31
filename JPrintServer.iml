@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.22" level="project" />
@@ -51,9 +52,7 @@
     <orderEntry type="library" name="Maven: com.apple:AppleJavaExtensions:1.4" level="project" />
     <orderEntry type="library" name="Maven: com.darcula:darcula-lnf:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.beautyeye:beautyeye-lnf:1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.weblaf:weblaf-lnf:1.2.8" level="project" />
     <orderEntry type="library" name="Maven: com.weblaf-complete:weblaf-complete:1.28" level="project" />
-    <orderEntry type="library" name="Maven: com.taobao:top-auto-sdk:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.aliyun:aliyun-java-sdk-dysmsapi:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.github.qcloudsms:qcloudsms:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
@@ -77,7 +76,6 @@
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-queries:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-sandbox:4.5.1" level="project" />
     <orderEntry type="library" name="Maven: jakarta-regexp:jakarta-regexp:1.4" level="project" />
-    <orderEntry type="library" name="Maven: org.olap4j:olap4j:0.9.7.309-JS-3" level="project" />
     <orderEntry type="library" name="Maven: net.sf.barcode4j:barcode4j-light:2.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:3.0.0-alpha-2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-ant:3.0.0-alpha-2" level="project" />
@@ -139,5 +137,7 @@
     <orderEntry type="library" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:fontbox:2.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pdfbox:pdfbox:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.olap4j:olap4j:1.2.0" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xercesImpl:2.11.0" level="project" />
   </component>
 </module>
